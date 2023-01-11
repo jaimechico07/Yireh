@@ -1,0 +1,43 @@
+.section-products-content {
+  @apply mt-20;
+
+  &__description {
+    @apply max-w-[700px] text-center mx-auto italic lg:text-lg mb-8 lg:mb-12;
+  }
+}
+
+.section-filters {
+  @apply mb-20;
+
+  &__inner {
+    @apply container sm:hidden;
+  }
+
+  &__tab-wrapper {
+    @apply mx-auto max-w-fit;
+  }
+
+  &__tabs {
+    @apply container hidden sm:flex sm:justify-center sm:gap-4 sm:flex-wrap;
+  }
+}
+
+.card-product {
+  @apply bg-white p-8;
+  @apply max-w-[380px];
+  @apply shadow-[10px_10px_50px_rgba(175,175,175,0.25)] rounded-xl;
+
+  &__grid {
+    @apply grid justify-center gap-8 container lg:grid lg:grid-cols-3 xl:grid-cols-4 pt-8;
+  }
+
+  &__title {
+    @apply font-bold text-primary-200 text-sm lg:text-lg mt-6 block text-center;
+  }
+
+  &__figure {
+    img {
+      @apply w-full max-h-[180px] object-contain min-h-[180px];
+    }
+  }
+}

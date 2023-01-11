@@ -1,0 +1,22 @@
+.btn {
+  &--primary {
+  }
+
+  &--welcome-button {
+    @apply px-12 py-2 text-white rounded-full bg-primary-200 hover:text-primary-200 hover:bg-primary-600  border-2 border-primary-200;
+  }
+
+  &--contact {
+    @apply px-12 py-3 font-bold text-white rounded-md bg-primary-200 hover:text-primary-200 hover:bg-primary-600 border-2 border-primary-200;
+  }
+  &--detail {
+    @apply px-10 py-2 bg-primary-200 inline-block rounded-full text-white font-bold hover:bg-primary-200/80 transition-colors duration-300 lg:px-16 lg:py-4;
+  }
+
+  &--filter {
+    @apply block py-2 px-6 sm:px-2 bg-transparent hover:border-b-[3px] hover:border-primary-200  text-primary-200 font-bold  transition duration-500;
+    &.active {
+      @apply border-b-[3px] border-primary-200;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.section-product-details {
+  @apply mt-40 mb-10 lg:mb-20 font-future-round flex flex-col gap-6 relative max-w-[1440px] m-auto;
+
+  &__title {
+    @apply lg:ml-[4%] text-primary-300 text-3xl font-bold text-center lg:text-left;
+  }
+
+  &__containt {
+    @apply grid lg:grid-cols-[50%_auto] bg-primary-300;
+  }
+
+  &__ul {
+    @apply pt-8 pb-16 mx-16 text-white;
+  }
+
+  &__list {
+    @apply text-base font-normal list-disc;
+  }
+
+  &__code {
+    @apply mt-4 mb-8 text-xl font-bold text-center lg:text-left lg:mb-0;
+  }
+
+  &__figure {
+    @apply grid lg:absolute top-0 bottom-0 right-0 lg:right-[5%] m-auto lg:left-auto left-0 justify-items-center lg:items-center pb-10 lg:pb-0;
+  }
+
+  &__img {
+    @apply px-4 sm:px-0  bg-cover  object-cover lg:max-w-[500px] lg:max-h-[300px];
+  }
+
+  &__containt-boton {
+    @apply grid justify-center lg:justify-start lg:ml-[4%]  mx-auto;
+  }
+
+  &__quote {
+    @apply px-10 py-2 text-xl font-bold border-2 rounded-full border-primary-300 text-primary-300 w-fit hover:text-white hover:bg-primary-300;
+  }
+}
+
+.section-product-related {
+  @apply container mb-16;
+
+  &__title {
+    @apply text-3xl font-bold text-center text-primary-300;
+  }
+
+  &__p {
+    @apply text-[#515151] font-normal text-center text-lg my-8 italic;
+  }
+
+  .card {
+    @apply max-w-[300px] border-2 shadow-md grid p-4 justify-items-center h-full w-full relative items-center;
+    cursor: pointer;
+  }
+
+  &__contArrow {
+    @apply flex justify-between absolute top-2/4 m-auto w-full;
+  }
+}

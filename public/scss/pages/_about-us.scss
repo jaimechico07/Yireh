@@ -1,0 +1,197 @@
+//sección bienvenidos
+
+.section-welcome {
+  @apply container grid grid-cols-1 gap-5 lg:gap-10  my-20 pb-5;
+
+  &__container-title {
+    @apply flex flex-col gap-2 lg:w-2/3 px-5 lg:px-10 py-2 lg:py-4 text-center lg:text-start;
+  }
+
+  &__title {
+    @apply text-primary-300 font-bold text-2xl font-future-round;
+  }
+
+  &__description {
+    @apply text-base;
+  }
+
+  &__container-features {
+    @apply grid grid-cols-1 lg:grid-cols-3;
+  }
+
+  &__container-feature-col {
+    @apply hidden lg:flex flex-col gap-16;
+  }
+
+  &__feature-img {
+    @apply lg:w-[4rem];
+  }
+
+  &__feature-title {
+    @apply font-bold text-primary-700 text-base;
+  }
+
+  &__feature-description {
+    @apply text-sm px-20 leading-5 text-center;
+  }
+
+  &__container-swiper {
+    @apply flex lg:hidden py-12;
+  }
+
+  &__mission-vision-container {
+    @apply grid grid-cols-1 lg:grid-cols-2  gap-8 lg:gap-16;
+  }
+
+  &__mission-vision-title {
+    @apply flex items-center justify-center gap-4 px-5 lg:px-10;
+  }
+
+  &__mission-vision-image {
+    @apply w-[3rem] lg:w-[4rem];
+  }
+
+  &__mission-vision-description {
+    @apply text-sm lg:text-base px-4;
+  }
+}
+// seccion nuestro merchandising
+
+.section-our-merchandising {
+  @apply container mb-16 lg:mb-32;
+
+  &__content {
+    @apply flex flex-col gap-8 lg:gap-20;
+  }
+
+  &__contText {
+    @apply flex flex-col gap-5;
+  }
+
+  &__title {
+    @apply text-center heading-secondary;
+  }
+
+  &__description {
+    @apply text-center max-w-[500px] m-auto parraf-description parraf-description--italic;
+  }
+
+  &__contCard {
+    @apply lg:grid lg:grid-cols-[repeat(auto-fit,_minmax(370px,_1fr))] lg:gap-16 lg:place-content-center hidden;
+  }
+
+  &__card {
+    @apply flex flex-col gap-4 relative items-center shadow-md border-2 p-7 m-auto h-full w-full;
+  }
+
+  &__cardLinkText {
+    @apply lg:text-2xl text-primary-300 text-center font-bold font-future-round;
+  }
+
+  &__cardSwiper {
+    @apply flex h-full flex-col relative gap-8 items-center shadow-lg  w-[250px] p-7 m-auto;
+  }
+
+  &__contArrow {
+    @apply flex justify-between absolute top-2/4 m-auto w-full;
+  }
+}
+
+.section-merchandising {
+  @apply container mb-40 font-future-round;
+
+  &__title {
+    @apply text-center text-primary-300 font-bold;
+    font-size: clamp(1.063rem, 1.4vw + 0.8rem, 2.5rem);
+  }
+
+  &__p {
+    @apply mb-12 mt-4 text-center;
+  }
+
+  &__group-card {
+    @apply grid gap-16 mx-auto lg:grid-cols-3;
+  }
+
+  .card {
+    @apply max-w-[450px] border-2 shadow-md grid justify-center justify-items-center h-full w-full relative items-center;
+    cursor: pointer;
+    .des {
+      @apply text-center absolute grid content-center bg-[#34d81bd3] w-full h-full font-bold;
+      transition: all 0.3s;
+      //transform: scale(1.5);
+      opacity: 0;
+      span {
+        @apply text-white;
+      }
+    }
+    &:hover .des {
+      //transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  &__sub-title {
+    @apply mb-4 text-xl font-bold text-center text-primary-300;
+  }
+
+  &__contArrow {
+    @apply flex justify-between absolute top-2/4 m-auto w-full;
+  }
+}
+
+.section-frequent-questions {
+  @apply container mb-20;
+
+  &__content {
+    @apply p-5 flex flex-col gap-8 max-w-[800px] mx-auto;
+  }
+
+  &__contTitle {
+    @apply text-center border-2 border-primary-300 p-4 relative font-future-round rounded-xl bg-primary-100  font-bold text-primary-300;
+  }
+
+  &__title {
+    @apply heading-secondary text-center  mb-8;
+  }
+
+  &__titleAccordion {
+    @apply pr-3 heading-tertiary;
+  }
+
+  &__description {
+    @apply bg-primary-100 h-0 overflow-hidden transition-all duration-500 ease-out parraf-description;
+  }
+
+  &__ul {
+    @apply pl-7;
+  }
+
+  &__li {
+    @apply list-disc font-bold text-lg;
+  }
+
+  &__icon {
+    @apply absolute md:text-2xl text-lg right-[10px] top-[15px] bottom-0 m-auto;
+  }
+
+  &__block {
+    @apply cursor-pointer;
+  }
+
+  &__block.active .section-frequent-questions__description {
+    @apply h-fit p-6 rounded-b-lg transition-all duration-500 ease-out;
+  }
+
+  &__block.inactive .section-frequent-questions__icon {
+    @apply hidden;
+  }
+
+  &__block.replace .section-frequent-questions__iconMinus {
+    @apply block;
+  }
+
+  &__iconMinus {
+    @apply absolute md:text-2xl text-lg right-[10px] top-[15px] bottom-0 m-auto hidden;
+  }
+}

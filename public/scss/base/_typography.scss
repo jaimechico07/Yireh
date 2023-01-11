@@ -1,0 +1,36 @@
+body {
+  @apply font-future-round;
+}
+
+.heading-primary {
+  @apply text-primary-300 text-2xl lg:text-4xl uppercase;
+  @apply font-bold;
+  &--italic {
+    @apply italic;
+  }
+
+  &--1 {
+    @apply text-white;
+  }
+}
+
+.heading-secondary {
+  @apply text-primary-300 text-xl lg:text-3xl;
+  @apply font-bold;
+}
+
+.heading-tertiary {
+  @apply text-primary-300 lg:text-2xl;
+  @apply font-bold;
+}
+
+.parraf-description {
+  @apply text-primary-700 text-sm lg:text-lg;
+  &--italic {
+    @apply italic;
+  }
+
+  &--1 {
+    @apply text-white;
+  }
+}

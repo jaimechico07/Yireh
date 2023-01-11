@@ -1,0 +1,27 @@
+.hero-heading {
+  @apply container mt-20;
+
+  &__container-bg {
+    @apply flex flex-col justify-center items-center lg:items-end rounded-xl bg-about-100 w-full bg-cover bg-center h-fit lg:h-[420px];
+
+    &--about {
+      @apply bg-about-100;
+    }
+
+    &--products {
+      @apply bg-products-100;
+    }
+  }
+
+  &__container-title {
+    @apply w-4/5 flex flex-col gap-2 lg:gap-3 lg:w-1/2 pr-4 lg:pr-8 py-16;
+  }
+
+  &__title {
+    @apply text-center lg:text-end heading-primary heading-primary--1;
+  }
+
+  &__description {
+    @apply text-center lg:text-end parraf-description parraf-description--1;
+  }
+}

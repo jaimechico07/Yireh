@@ -1,0 +1,92 @@
+.swiper {
+  &--about-us {
+    & .swiper-slide {
+      @apply pb-12;
+    }
+
+    & .swiper-pagination-bullet-active {
+      @apply bg-primary-300;
+    }
+
+    & .custom-bullet {
+      @apply h-4 w-4 bg-primary-300;
+    }
+  }
+
+  &--our-merchandising {
+    @apply relative lg:hidden;
+
+    & .swiper-slide {
+      @apply h-[350px] p-5;
+    }
+
+    & .swiper-button-prev::after,
+    .swiper-button-next::after {
+      @apply text-lg font-bold text-white;
+    }
+
+    & {
+      .swiper-button-prev,
+      .swiper-button-next {
+        @apply bg-primary-300 rounded-lg w-9 h-9;
+        display: flex;
+        position: static;
+        left: initial;
+        right: initial;
+        top: initial;
+      }
+    }
+  }
+
+  &--gallery {
+    @apply relative lg:hidden;
+
+    & .swiper-slide {
+      @apply h-[100px] text-center w-[100px] items-center;
+    }
+
+    & .swiper-button-prev::after,
+    .swiper-button-next::after {
+      content: "";
+    }
+
+    & {
+      .swiper-button-prev,
+      .swiper-button-next {
+        @apply bg-primary-300 rounded-lg w-9 h-9 text-lg font-bold text-white;
+      }
+    }
+  }
+
+  &--product-related {
+    @apply relative;
+
+    & .swiper-slide {
+      @apply h-[300px];
+    }
+
+    & .swiper-button-prev::after,
+    .swiper-button-next::after {
+      @apply text-lg font-bold text-white;
+    }
+
+    & {
+      .swiper-button-prev,
+      .swiper-button-next {
+        @apply bg-primary-300 rounded-lg w-9 h-9;
+        display: flex;
+        position: static;
+        left: initial;
+        right: initial;
+        top: initial;
+      }
+    }
+  }
+
+  &--filter {
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+      @apply font-bold  text-sm bg-primary-200 w-8 h-8   text-white flex justify-center items-center  rounded-full;
+    }
+  }
+}

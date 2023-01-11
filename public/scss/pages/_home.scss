@@ -1,0 +1,171 @@
+// seccion llamenos
+.section-call-us {
+  @apply grid;
+
+  &__figure {
+    @apply col-start-1 row-start-1 mx-auto;
+  }
+
+  &__img {
+    @apply w-min h-full lg:max-h-[500px];
+  }
+
+  &__containt {
+    @apply container my-12 grid col-start-1 row-start-1 gap-4  text-center text-white place-content-center justify-items-center;
+    span {
+      @apply font-normal text-primary-500;
+      font-size: clamp(0.875rem, 1vw + 0.7rem, 1.875rem);
+    }
+  }
+
+  &__p {
+    @apply font-bold lg:leading-[50px];
+    font-size: clamp(1rem, 2.1vw + 0.6rem, 3.125rem);
+  }
+
+  &__boton {
+    @apply py-2 px-8 md:px-16  md:py-4 font-normal rounded-lg bg-primary-200 border-2 border-primary-200 hover:bg-white hover:text-primary-200;
+    font-size: clamp(0.625rem, 0.9vw + 0.4rem, 1.563rem);
+  }
+}
+
+//seccion hero
+.section-home-hero {
+  @apply container bg-home-100  bg-cover bg-center  h-[440px] lg:h-[calc(100vh-4rem)]   mt-20 mb-8 lg:mb-16;
+
+  &__container-contain::before {
+    content: "";
+    @apply absolute w-full h-full bg-[#ffffff86];
+  }
+
+  &__container-contain {
+    @apply relative w-[95%] lg:w-1/2  lg:h-auto m-auto p-5 lg:py-20 lg:px-10 flex flex-col gap-2 lg:gap-4 justify-center items-center;
+  }
+
+  &__title {
+    @apply relative text-center text-2xl lg:text-4xl heading-primary;
+  }
+
+  &__description {
+    @apply relative leading-5 lg:leading-10 parraf-description not-italic;
+  }
+}
+
+// seccion nuestro merchandising
+
+.section-our-merchandising {
+  @apply container mb-16 lg:mb-32;
+
+  &__content {
+    @apply flex flex-col gap-8 lg:gap-20;
+  }
+
+  &__contText {
+    @apply flex flex-col gap-5;
+  }
+
+  &__title {
+    @apply text-center heading-secondary;
+  }
+
+  &__description {
+    @apply text-center max-w-[500px] m-auto parraf-description parraf-description--italic;
+  }
+
+  &__contCard {
+    @apply lg:grid lg:grid-cols-[repeat(auto-fit,_minmax(370px,_1fr))] lg:gap-16 lg:place-content-center hidden;
+  }
+
+  &__card {
+    @apply flex flex-col gap-4 relative items-center shadow-md border-2 p-7 m-auto h-full w-full;
+  }
+
+  &__cardLinkText {
+    @apply lg:text-2xl text-primary-300 text-center font-bold font-future-round;
+  }
+
+  &__cardSwiper {
+    @apply flex h-full flex-col relative gap-8 items-center shadow-lg  w-[250px] p-7 m-auto;
+  }
+
+  &__contArrow {
+    @apply flex justify-between absolute top-2/4 m-auto w-full;
+  }
+}
+
+//seccion banner
+.section-banner {
+  @apply mb-16;
+
+  &__content {
+    @apply relative;
+  }
+
+  &__contTextImg {
+    @apply grid grid-cols-1 md:grid-cols-2  place-content-start md:place-content-center  py-4  container  h-[450px];
+  }
+
+  &__info {
+    @apply grid gap-5 md:max-w-[] md:justify-items-start justify-items-center text-center md:text-start;
+  }
+
+  &__title {
+    @apply heading-secondary;
+  }
+
+  &__contDescription {
+    @apply w-full;
+  }
+
+  &__description {
+    @apply max-w-[500px] parraf-description parraf-description--italic;
+  }
+
+  &__btn {
+    @apply bg-primary-300  py-1 px-7 lg:px-11 rounded-full text-white font-future-round;
+  }
+
+  &__figure {
+    @apply m-auto max-w-[550px] md:max-w-[600px] h-fit absolute -bottom-6 md:bottom-0 md:top-0 right-0 left-0 md:left-auto md:right-auto;
+  }
+
+  &__picture {
+    @apply absolute top-0 -z-10 w-full;
+  }
+
+  &__fImg {
+    @apply m-auto px-10;
+  }
+
+  &__pImg {
+    @apply bg-center bg-no-repeat w-full bg-cover h-[420px] object-cover;
+  }
+}
+
+.section-mugs-magics {
+  @apply container my-20;
+
+  &__group-grid {
+    @apply grid grid-flow-row lg:grid-cols-[50%_auto] gap-16 items-center;
+  }
+
+  &__figure {
+    @apply border-[12px] border-primary-300 lg:h-[255px] xl:h-[345px] 2xl:h-[420px] rounded-md order-1 lg:order-none;
+  }
+
+  &__img {
+    @apply -translate-x-3 -translate-y-11 bg-contain;
+  }
+
+  &__col-1 {
+    @apply text-center lg:text-right;
+  }
+
+  &__title {
+    @apply heading-secondary;
+  }
+
+  &__description {
+    @apply parraf-description parraf-description--italic;
+  }
+}
